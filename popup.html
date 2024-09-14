@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Monitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+    }
+    .modal {
+      background-color: rgb(37, 161, 149);
+      padding: 20px;
+      border-radius: 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 400px;
+      position: relative;
+    }
+    .modal-header {
+      background-color: #ffffff;
+      color: rgb(37, 161, 149);
+      padding: 10px;
+      border-radius: 0;
+      font-size: 22px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .modal-header img {
+      margin-right: 10px;
+    }
+    .modal-body {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #fff;
+    }
+    .modal-footer {
+      display: flex;
+      justify-content: space-around;
+    }
+    button {
+      background-color: #ffffff;
+      color: rgb(37, 161, 149);
+      border: none;
+      padding: 12px 24px;
+      margin: 5px;
+      border-radius: 0;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <img src="alert-icon.png" alt="Alert Icon" width="24" height="24">
+      Alert
+    </div>
+    <div class="modal-body">
+      <p>File already exists. What would you like to do?</p>
+    </div>
+    <div class="modal-footer">
+      <button id="goToFile">Go to File Location</button>
+      <button id="cancelDownload">Cancel Download</button>
+      <button id="downloadAnyway">Download Anyway</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
